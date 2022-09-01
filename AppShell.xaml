@@ -6,9 +6,20 @@
     xmlns:views="clr-namespace:SQLiteDemo.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:StudentListPage}"
-        Route="MainPage" />
+     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+
+
+            <ShellContent Title="Estudiantes "
+                ContentTemplate="{DataTemplate views:StudentListPage}"                          
+                />
+            <ShellContent/>
+            <ShellContent Title="Materias "
+                        
+                          ContentTemplate="{DataTemplate views:MateriaListPage}" 
+                          />
+
+
+        </FlyoutItem>
 
 </Shell>
